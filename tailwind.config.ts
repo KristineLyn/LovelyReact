@@ -8,9 +8,17 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        sans: ['Lato', 'sans-serif'],
+        cursive: ['Dancing Script', 'cursive'],
+      },
       colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
+        pink: {
+          100: '#ffe0f0',
+          200: '#ffbdd4',
+          600: '#ff6b6b',
+          800: '#d22f2f',
+        },
       },
     },
   },

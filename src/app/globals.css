@@ -2,26 +2,42 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;600&family=Lato:wght@300;400;700&display=swap');
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+html, body {
+  font-family: 'Lato', sans-serif;
+  background: linear-gradient(180deg, #fbc2eb 0%, #a6c1ee 100%);
+  background-attachment: fixed;
+  color: #555;
 }
 
 body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1rem;
+  line-height: 1.6;
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+h2 {
+  font-family: 'Dancing Script', cursive;
+}
+
+.font-cursive {
+  font-family: 'Dancing Script', cursive;
+}
+
+p {
+  transition: all 0.3s ease;
+}
+
+p:hover {
+  color: #ff6b6b;
+}
+
+a {
+  text-decoration: none;
+  color: #ff6b6b;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: #d22f2f;
 }
