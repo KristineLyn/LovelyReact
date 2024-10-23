@@ -1,4 +1,5 @@
 import Timer from './components/Timer';
+import Router from './Router'; // Import the custom Router component
 
 const Home = () => {
   return (
@@ -8,9 +9,14 @@ const Home = () => {
       </header>
 
       <main className="grid grid-cols-2 gap-6 px-16 py-8">
-        <section className="p-6 bg-white bg-opacity-80 rounded-lg shadow-lg transform transition duration-300 hover:scale-105">
+        <section
+          className="p-6 bg-white bg-opacity-80 rounded-lg shadow-lg transform transition duration-300 hover:scale-105"
+        >
           <h2 className="text-2xl font-cursive text-pink-600 mb-4">Our Gallery</h2>
-          <p className="text-base text-gray-700">A collection of our special moments.</p>
+          <p className="text-base text-gray-700 mb-4">
+            A collection of our special moments.
+          </p>
+          <Router to="./gallery">View Gallery</Router>
         </section>
 
         <section className="p-6 bg-white bg-opacity-80 rounded-lg shadow-lg transform transition duration-300 hover:scale-105">
